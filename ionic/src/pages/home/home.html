@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>
+      <img src="../../assets/imgs/shopping-logo.png" class="logo"/>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let data of cards" id="{{data.id}}">
+    <img src="{{data.img_url}}">
+    <ion-card-content>
+      <ion-card-title>
+        {{data.titulo}}
+      </ion-card-title>
+      <p>
+        {{data.conteudo}}
+      </p>
+      <p>
+        <span class="tag">{{data.category_name}}</span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab bottom right>
+      <button ion-fab (click)="goToQR()"><ion-icon name="qr-scanner"></ion-icon></button>
+  </ion-fab>
+</ion-content>

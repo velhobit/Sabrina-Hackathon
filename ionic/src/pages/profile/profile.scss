@@ -1,0 +1,28 @@
+page-profile {
+    .compartilhe{
+
+        input{
+           width: 100% !important;
+           background-color: rgb(219, 219, 219) !important;
+           color: black !important;
+           font-size: 18px;
+           text-align:center;
+           box-sizing: border-box;
+           font-weight: bold;
+           border-radius: 50px;
+           padding: 10px;
+           margin-left: 0 !important;
+        }
+
+        ion-label{
+            text-align: center !important;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            ion-icon{
+                font-size: 32px !important;
+            }
+        }
+    }
+}

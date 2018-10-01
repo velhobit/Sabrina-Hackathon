@@ -1,0 +1,7 @@
+{
+  "name": "ShoppingRecife",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Fale com a Sabrina
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="chat" padding>
+    <ion-item *ngFor="let data of conversation" class="{{data.class}}">
+      <p>{{data.text}}</p>
+    </ion-item>
+  </ion-list>
+  <form padding>
+    <div class="chat_input">
+        <ion-input type="text" [(ngModel)]="chat" name="chat" placeholder="Digite alguma coisa"></ion-input>
+        <button color="facebluk" large (click)="enviarMensagem()"><ion-icon name="text" large></ion-icon></button>
+    </div>
+  </form>
+</ion-content>

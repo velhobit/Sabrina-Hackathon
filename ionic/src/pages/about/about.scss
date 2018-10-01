@@ -1,0 +1,70 @@
+page-about {
+    .chat_input{
+        box-sizing: border-box;
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #ddd;
+        border-radius: 4px;
+
+        input{
+            padding: 5px 10px !important;
+            background-color: white !important;
+            font-size: 16px;
+            border-radius: 3px;
+        }
+
+        button{
+            background-color: white;
+            margin: 10px 0 !important;
+            border-radius: 50px;    
+        }
+        ion-icon{
+            font-size: 24px;
+            color: cornflowerblue;
+        }
+    }
+
+    .scroll-content{
+        display: flex !important;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .chat{
+        ion-item{
+            ion-label{
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+                font-size: 18px !important;
+                border-radius: 3px;
+                padding: 8px 13px;
+                white-space:normal;
+            }
+        }
+        .sabrina{
+            ion-label{
+                background-color: rgb(255, 255, 255) !important;
+                text-align: right;
+                color: rgb(170, 18, 18);
+                border: 1px solid red;
+                font-weight: bold;
+                padding-right: 60px;
+                background-image: url("../../assets/imgs/sabrina.png");
+                background-repeat: no-repeat;
+                background-size: 50px;
+                background-position: bottom right;
+                min-height: 70px;
+            }
+        }
+        .me{
+            ion-label{
+                color: rgb(27, 71, 153);
+                border: 1px solid #ccc;
+            }
+        }
+
+        p{
+            margin: 0;;
+        }
+    }
+}

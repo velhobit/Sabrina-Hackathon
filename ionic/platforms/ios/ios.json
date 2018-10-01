@@ -1,0 +1,238 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"FacebookConnectPlugin\"><param name=\"ios-package\" value=\"FacebookConnectPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<plugin name=\"FacebookConnectPlugin\" value=\"FacebookConnectPlugin\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://m.facebook.com\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://graph.facebook.com\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://api.facebook.com\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://*.fbcdn.net\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://*.akamaihd.net\" />",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"QRScanner\"><param name=\"ios-package\" value=\"QRScanner\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"CDVStatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<preference name=\"StatusBarOverlaysWebView\" value=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<allow-navigation href=\"http://localhost:8080/*\" />",
+              "count": 1
+            },
+            {
+              "xml": "<allow-navigation href=\"http://127.0.0.1:8080/*\" />",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"IonicWebView\"><param name=\"ios-package\" value=\"CDVWKWebViewEngine\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<preference name=\"CordovaWebViewEngine\" value=\"CDVWKWebViewEngine\" />",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"CDVIonicKeyboard\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "*-Info.plist": {
+        "parents": {
+          "FacebookAppID": [
+            {
+              "xml": "<string>270466030465462</string>",
+              "count": 1
+            }
+          ],
+          "FacebookDisplayName": [
+            {
+              "xml": "<string>Shopping Recife - Hackathon</string>",
+              "count": 1
+            }
+          ],
+          "CFBundleURLTypes": [
+            {
+              "xml": "<array><dict><key>CFBundleURLSchemes</key><array><string>fb270466030465462</string></array></dict></array>",
+              "count": 1
+            }
+          ],
+          "NSAppTransportSecurity": [
+            {
+              "xml": "<dict><key>NSExceptionDomains</key><dict><key>facebook.com</key><dict><key>NSIncludesSubdomains</key><true /><key>NSThirdPartyExceptionRequiresForwardSecrecy</key><false /></dict><key>fbcdn.net</key><dict><key>NSIncludesSubdomains</key><true /><key>NSThirdPartyExceptionRequiresForwardSecrecy</key><false /></dict><key>akamaihd.net</key><dict><key>NSIncludesSubdomains</key><true /><key>NSThirdPartyExceptionRequiresForwardSecrecy</key><false /></dict></dict></dict>",
+              "count": 1
+            }
+          ],
+          "LSApplicationQueriesSchemes": [
+            {
+              "xml": "<array><string>fbapi</string><string>fb-messenger-api</string><string>fbauth2</string><string>fbshareextension</string></array>",
+              "count": 1
+            }
+          ],
+          "NSCameraUsageDescription": [
+            {
+              "xml": "<string>The camera is used to scan QR codes.</string>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-facebook4": {
+      "APP_ID": "270466030465462",
+      "APP_NAME": "Shopping Recife - Hackathon",
+      "FACEBOOK_ANDROID_SDK_VERSION": "4.36.0",
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-qrscanner": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
+      "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
+      "pluginId": "cordova-plugin-facebook4",
+      "clobbers": [
+        "facebookConnectPlugin"
+      ]
+    },
+    {
+      "id": "cordova-plugin-qrscanner.QRScanner",
+      "file": "plugins/cordova-plugin-qrscanner/www/www.min.js",
+      "pluginId": "cordova-plugin-qrscanner",
+      "clobbers": [
+        "QRScanner"
+      ]
+    },
+    {
+      "id": "cordova-plugin-statusbar.statusbar",
+      "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+      "pluginId": "cordova-plugin-statusbar",
+      "clobbers": [
+        "window.StatusBar"
+      ]
+    },
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
+    },
+    {
+      "id": "cordova-plugin-splashscreen.SplashScreen",
+      "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+      "pluginId": "cordova-plugin-splashscreen",
+      "clobbers": [
+        "navigator.splashscreen"
+      ]
+    },
+    {
+      "id": "cordova-plugin-ionic-webview.IonicWebView",
+      "file": "plugins/cordova-plugin-ionic-webview/src/www/util.js",
+      "pluginId": "cordova-plugin-ionic-webview",
+      "clobbers": [
+        "Ionic.WebView"
+      ]
+    },
+    {
+      "id": "cordova-plugin-ionic-webview.ios-wkwebview-exec",
+      "file": "plugins/cordova-plugin-ionic-webview/src/www/ios/ios-wkwebview-exec.js",
+      "pluginId": "cordova-plugin-ionic-webview",
+      "clobbers": [
+        "cordova.exec"
+      ]
+    },
+    {
+      "id": "cordova-plugin-ionic-keyboard.keyboard",
+      "file": "plugins/cordova-plugin-ionic-keyboard/www/ios/keyboard.js",
+      "pluginId": "cordova-plugin-ionic-keyboard",
+      "clobbers": [
+        "window.Keyboard"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-facebook4": "3.0.0",
+    "cordova-plugin-add-swift-support": "1.7.2",
+    "cordova-plugin-qrscanner": "2.6.0",
+    "cordova-plugin-whitelist": "1.3.3",
+    "cordova-plugin-statusbar": "2.4.2",
+    "cordova-plugin-device": "2.0.2",
+    "cordova-plugin-splashscreen": "5.0.2",
+    "cordova-plugin-ionic-webview": "2.1.4",
+    "cordova-plugin-ionic-keyboard": "2.1.3"
+  }
+}

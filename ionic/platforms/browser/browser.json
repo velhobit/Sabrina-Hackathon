@@ -1,0 +1,174 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Device\"><param name=\"browser-package\" value=\"Device\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"FacebookConnectPlugin\"><param name=\"browser-package\" value=\"FacebookConnectPluginBrowser\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<plugin name=\"FacebookConnectPlugin\" value=\"FacebookConnectPlugin\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://m.facebook.com\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://connect.facebook.net\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://graph.facebook.com\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://api.facebook.com\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://*.fbcdn.net\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://*.akamaihd.net\" />",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"QRScanner\"><param name=\"browser-package\" value=\"QRScanner\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-facebook4": {
+      "APP_ID": "270466030465462",
+      "APP_NAME": "Shopping Recife - Hackathon",
+      "FACEBOOK_ANDROID_SDK_VERSION": "4.36.0",
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-qrscanner": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "id": "cordova-plugin-device.device",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
+    },
+    {
+      "file": "plugins/cordova-plugin-device/src/browser/DeviceProxy.js",
+      "id": "cordova-plugin-device.DeviceProxy",
+      "pluginId": "cordova-plugin-device",
+      "runs": true
+    },
+    {
+      "file": "plugins/cordova-plugin-facebook4/www/facebook-browser.js",
+      "id": "cordova-plugin-facebook4.FacebookConnectPluginBrowser",
+      "pluginId": "cordova-plugin-facebook4",
+      "clobbers": [
+        "facebookConnectPlugin"
+      ]
+    },
+    {
+      "file": "plugins/cordova-plugin-ionic-webview/src/www/util.js",
+      "id": "cordova-plugin-ionic-webview.IonicWebView",
+      "pluginId": "cordova-plugin-ionic-webview",
+      "clobbers": [
+        "Ionic.WebView"
+      ]
+    },
+    {
+      "file": "plugins/cordova-plugin-qrscanner/www/www.min.js",
+      "id": "cordova-plugin-qrscanner.QRScanner",
+      "pluginId": "cordova-plugin-qrscanner",
+      "clobbers": [
+        "QRScanner"
+      ]
+    },
+    {
+      "file": "plugins/cordova-plugin-qrscanner/src/browser/plugin.min.js",
+      "id": "cordova-plugin-qrscanner.QRScannerProxy",
+      "pluginId": "cordova-plugin-qrscanner",
+      "runs": true
+    },
+    {
+      "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+      "id": "cordova-plugin-splashscreen.SplashScreen",
+      "pluginId": "cordova-plugin-splashscreen",
+      "clobbers": [
+        "navigator.splashscreen"
+      ]
+    },
+    {
+      "file": "plugins/cordova-plugin-splashscreen/src/browser/SplashScreenProxy.js",
+      "id": "cordova-plugin-splashscreen.SplashScreenProxy",
+      "pluginId": "cordova-plugin-splashscreen",
+      "runs": true
+    },
+    {
+      "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+      "id": "cordova-plugin-statusbar.statusbar",
+      "pluginId": "cordova-plugin-statusbar",
+      "clobbers": [
+        "window.StatusBar"
+      ]
+    },
+    {
+      "file": "plugins/cordova-plugin-statusbar/src/browser/StatusBarProxy.js",
+      "id": "cordova-plugin-statusbar.StatusBarProxy",
+      "pluginId": "cordova-plugin-statusbar",
+      "runs": true
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-add-swift-support": "1.7.2",
+    "cordova-plugin-device": "2.0.2",
+    "cordova-plugin-facebook4": "3.0.0",
+    "cordova-plugin-ionic-keyboard": "2.1.3",
+    "cordova-plugin-ionic-webview": "2.1.4",
+    "cordova-plugin-qrscanner": "2.6.0",
+    "cordova-plugin-splashscreen": "5.0.2",
+    "cordova-plugin-statusbar": "2.4.2",
+    "cordova-plugin-whitelist": "1.3.3"
+  }
+}
