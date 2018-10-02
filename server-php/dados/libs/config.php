@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 header("Content-Type: application/json");
 
 $host = "localhost";
-$dbname = "porti750_hack";
-$dbuser = "porti750_hack";
-$dbpass = "B(A^s@OtofZX"; 
+$dbname = "_hack";
+$dbuser = "_hack";
+$dbpass = ""; 
 ?>
